@@ -26,7 +26,7 @@
    * Thêm dữ liệu mẫu ban đầu cho trang chủ (`homepage_content`).
 
 ### Bước 3: Kiểm tra Storage Bucket
-Lưu ý: Đoạn mã SQL ở Bước 1 đã tự động khởi tạo bucket blog-images cho bạn. Bạn không cần làm thủ công bước này nữa.
+Lưu ý: Đoạn mã SQL ở Bước 1 đã tự động khởi tạo bucket cho bạn. Bạn không cần làm thủ công bước này nữa.
 
 1. Đi tới phần **Storage** ở menu bên trái (biểu tượng thư mục).
 2. Kiểm tra xem bucket có tên `media` đã được tạo hay chưa.
