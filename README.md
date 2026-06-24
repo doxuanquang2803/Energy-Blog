@@ -26,6 +26,7 @@
    * Thêm dữ liệu mẫu ban đầu cho trang chủ (`homepage_content`).
 
 ### Bước 3: Kiểm tra Storage Bucket
+Lưu ý: Đoạn mã SQL ở Bước 1 đã tự động khởi tạo bucket blog-images cho bạn. Bạn không cần làm thủ công bước này nữa.
 
 1. Đi tới phần **Storage** ở menu bên trái (biểu tượng thư mục).
 2. Kiểm tra xem bucket có tên `media` đã được tạo hay chưa.
@@ -46,33 +47,7 @@
    ```
 4. Thay thế `YOUR_SUPABASE_PROJECT_URL` và `YOUR_SUPABASE_ANON_PUBLIC_KEY` bằng thông tin bạn vừa sao chép từ Supabase. Lưu lại file.
 
----
 
-## Hướng dẫn chạy dự án locally
-
-Vì đây là dự án Web tĩnh (HTML/CSS/JS thuần), bạn cần chạy thông qua một máy chủ local (Web Server) để tránh lỗi CORS khi tải các file module hoặc giao tiếp với Supabase.
-
-### Cách 1: Sử dụng Extension "Live Server" trên VS Code (Khuyên dùng)
-1. Cài đặt extension **Live Server** trong VS Code.
-2. Mở thư mục dự án này trong VS Code.
-3. Nhấp chuột phải vào file [index.html](file:///Users/doxuanquang/Documents/BioWraps/Blog/solartec-1.0.0/index.html) và chọn **Open with Live Server** (hoặc nhấp nút **Go Live** ở góc dưới cùng bên phải VS Code).
-
-### Cách 2: Sử dụng NodeJS / npm (Nếu có sẵn)
-Bạn có thể chạy dự án thông qua bất kỳ server tĩnh nào:
-```bash
-# Cài đặt server tĩnh toàn cục
-npm install -g serve
-
-# Chạy server tại thư mục hiện tại
-serve .
-```
-Hoặc dùng python có sẵn:
-```bash
-python3 -m http.server 8000
-```
-Sau đó truy cập đường dẫn `http://localhost:8000`.
-
----
 
 ## Các tính năng chính của dự án
 
